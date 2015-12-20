@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OpenLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduzca el código ISBN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8t2-Ro-X4i">
+                                <rect key="frame" x="207" y="53" width="207" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="207" id="GJW-e6-UzC"/>
+                                    <constraint firstAttribute="height" constant="21" id="kPF-UR-vQx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ah-LF-Mcc">
+                                <rect key="frame" x="201" y="103" width="216" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="bOr-Rj-tAN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LGd-Id-rVV">
+                                <rect key="frame" x="199" y="196" width="213" height="301"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnU-56-2Yu">
+                                <rect key="frame" x="317" y="158" width="98" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="4hv-EX-QiG"/>
+                                </constraints>
+                                <state key="normal" title="Limpiar"/>
+                                <connections>
+                                    <action selector="limpiar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NZQ-cX-vTP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4F-N4-Qd1">
+                                <rect key="frame" x="199" y="158" width="115" height="30"/>
+                                <state key="normal" title="Buscar"/>
+                                <connections>
+                                    <action selector="buscar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iQa-vW-5Cf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8t2-Ro-X4i" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="1Lf-h7-fUN"/>
+                            <constraint firstItem="nnU-56-2Yu" firstAttribute="height" secondItem="O4F-N4-Qd1" secondAttribute="height" id="5MB-fD-gwg"/>
+                            <constraint firstItem="6ah-LF-Mcc" firstAttribute="top" secondItem="8t2-Ro-X4i" secondAttribute="bottom" constant="29" id="B7f-68-bSM"/>
+                            <constraint firstItem="nnU-56-2Yu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="66" id="CKk-ZL-vxy"/>
+                            <constraint firstItem="nnU-56-2Yu" firstAttribute="baseline" secondItem="O4F-N4-Qd1" secondAttribute="baseline" id="DdH-eQ-SFd"/>
+                            <constraint firstItem="LGd-Id-rVV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="46.5" id="JZM-Ax-gHe"/>
+                            <constraint firstItem="8t2-Ro-X4i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="10.5" id="MOY-Gw-adp"/>
+                            <constraint firstItem="nnU-56-2Yu" firstAttribute="top" secondItem="6ah-LF-Mcc" secondAttribute="bottom" constant="25" id="PfO-KF-w62"/>
+                            <constraint firstItem="LGd-Id-rVV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="5.5" id="WqO-SB-eIm"/>
+                            <constraint firstItem="nnU-56-2Yu" firstAttribute="width" secondItem="O4F-N4-Qd1" secondAttribute="width" constant="-17" id="atD-HY-Qx1"/>
+                            <constraint firstItem="8t2-Ro-X4i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="10.5" id="ePu-q6-WcR"/>
+                            <constraint firstItem="LGd-Id-rVV" firstAttribute="leading" secondItem="8t2-Ro-X4i" secondAttribute="leading" constant="-8" id="fxD-DK-6bG"/>
+                            <constraint firstItem="8t2-Ro-X4i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="10.5" id="kcc-B4-lwt"/>
+                            <constraint firstItem="6ah-LF-Mcc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="9" id="lJU-Ja-weP"/>
+                            <constraint firstItem="nnU-56-2Yu" firstAttribute="leading" secondItem="O4F-N4-Qd1" secondAttribute="trailing" constant="3" id="sGs-fh-TDZ"/>
+                            <constraint firstItem="LGd-Id-rVV" firstAttribute="top" secondItem="nnU-56-2Yu" secondAttribute="bottom" constant="8" id="v7w-WH-M1U"/>
+                            <constraint firstItem="nnU-56-2Yu" firstAttribute="width" secondItem="O4F-N4-Qd1" secondAttribute="width" constant="-17" id="xQf-Wl-LX0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="isbn" destination="6ah-LF-Mcc" id="GWi-DC-g9a"/>
+                        <outlet property="resultado" destination="LGd-Id-rVV" id="dMz-uC-Hdj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="681" y="487"/>
+        </scene>
+    </scenes>
+</document>
