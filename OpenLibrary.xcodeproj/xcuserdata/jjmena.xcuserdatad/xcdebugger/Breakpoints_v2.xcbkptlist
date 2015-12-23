@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OpenLibrary/ViewController.swift"
-            timestampString = "472605107.084727"
+            timestampString = "472606350.940379"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "enter(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -63,22 +63,6 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
             endingLineNumber = "45"
-            landmarkName = "request()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OpenLibrary/ViewController.swift"
-            timestampString = "472604929.670643"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
             landmarkName = "request()"
             landmarkType = "5">
          </BreakpointContent>

@@ -45,23 +45,29 @@ class ViewController: UIViewController {
         let urls = "https://openlibrary.org/api/books?jscmd=data&format=json&bibkeys=ISBN:" + self.isbn.text!
         let url = NSURL(string: urls)
         let datos : NSData? = NSData(contentsOfURL: url!)
-        let texto = NSString(data:datos!, encoding:NSUTF8StringEncoding)
         
-        // Se muestra el resultado de la petición
-        resultado.text = texto as! String
+        if (datos == nil)  {
+            resultado.text = "Se ha producido un error en la conexión con el servidor. Pruebe más tarde."
+            
+        } else {
+            let texto = NSString(data:datos!, encoding:NSUTF8StringEncoding)
+            
+            // Se muestra el resultado de la petición
+            resultado.text = texto as! String
+        }
+        
     }
 
     @IBAction func endEdit(sender: AnyObject) {
         
-        print("Se llama")
         // Se lanza la búsqueda en el enter
-        self.buscar(sender);
+        self.buscar(sender)
         
     }
     @IBAction func enter(sender: AnyObject) {
-        print("Se llama")
+        
         // Se lanza la búsqueda en el enter
-        self.buscar(sender);
+        self.buscar(sender)
     }
 }
 
