@@ -31,8 +31,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buscar(sender: AnyObject) {
-        // Se realiza la petición
-        self.request()
+        
+        if (isbn.text != nil && isbn.text!.isEmpty) {
+            self.resultado.text = nil
+        } else {
+            // Se realiza la petición
+            self.request()
+        }
     }
     
     
@@ -46,5 +51,17 @@ class ViewController: UIViewController {
         resultado.text = texto as! String
     }
 
+    @IBAction func endEdit(sender: AnyObject) {
+        
+        print("Se llama")
+        // Se lanza la búsqueda en el enter
+        self.buscar(sender);
+        
+    }
+    @IBAction func enter(sender: AnyObject) {
+        print("Se llama")
+        // Se lanza la búsqueda en el enter
+        self.buscar(sender);
+    }
 }
 
